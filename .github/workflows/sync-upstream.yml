@@ -2,7 +2,7 @@ name: Sync Upstream Repository
 
 on:
   schedule:
-    - cron: '0 2 * * *'
+    - cron: 0 2 * * *
 
   workflow_dispatch:
 
@@ -43,4 +43,3 @@ jobs:
       - name: Push changes
         run: |
           git push origin main
-
